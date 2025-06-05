@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eh_Moth's Colossal Carnival of Affiliates' Epic Streaming Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="poster">
+        <h1 class="title">Eh_Mɇoth's Colossal Carnival of Affiliates' Epic Streaming Adventure: LONG STREAM Extravaganza</h1>
+        <div class="events">
+            <h2 class="subtitle">Event Schedule March 14th-15th(Times Localized)</h2>
+            <ul>
+                <li class="event-time" data-utc-time="2025-03-14T14:00">Banjo Kazooie/Wind Waker -                          </li>
+                <li class="event-time" data-utc-time="2025-03-14T17:00">Balders Gate 3 w/Ginauz  -                          </li>
+                <li class="event-time" data-utc-time="2025-03-14T22:00">Cooking -                                           </li>
+                <li class="event-time" data-utc-time="2025-03-14T23:00">Golf w/ Friends -                                   </li>
+                <li class="event-time" data-utc-time="2025-03-15T01:00">Catan -                                             </li>
+                <li class="event-time" data-utc-time="2025-03-15T03:00">Getting Over It -                                   </li>
+                <li class="event-time" data-utc-time="2025-03-15T05:00">Another Golf Game -                                 </li>
+                <li class="event-time" data-utc-time="2025-03-15T07:00">Game Over -                                         </li>
+                <li class="event-time" data-utc-time="2025-03-15T09:00">Minecraft Achievement Run -                         </li>
+                <li class="event-time" data-utc-time="2025-03-15T13:00">Fall Guys -                                         </li>
+                <li class="event-time" data-utc-time="2025-03-15T15:00">Plate Up -                                          </li>
+            </ul>
+            <div class="countdown" id="countdown"></div>
+            <a class="live-link" href="https://www.twitch.tv/Eh_Moth" target="_blank">Live at Twitch.Tv/Eh_Moth</a>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+        <script>
+        // Function to convert UTC time to local time
+        function convertToLocaleTime(utcTime) {
+            const date = new Date(utcTime);
+            const localTime = new Date(date.getTime() - (date.getTimezoneOffset() * 60000)); // Convert minutes to milliseconds
+            return localTime.toLocaleString(undefined, { hour: 'numeric', minute: 'numeric', hour12: true }); // Format the time without seconds
+        }
+
+        // Update event times to the user's local time
+        const eventTimes = document.querySelectorAll(".event-time");
+        eventTimes.forEach(event => {
+            const utcTime = event.getAttribute("data-utc-time");
+            const localTime = convertToLocaleTime(utcTime);
+            event.textContent = `${event.textContent.replace('(UTC)', '')} (${localTime})`;
+        });
+    </script>
+</body>
+</html>

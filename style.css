@@ -1,0 +1,90 @@
+body {
+ margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    background: url("https://cdn.glitch.global/b8cb72b0-6f5e-482c-b521-db3daca2c6a1/patternbase-black.gif?v=1738712181584") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.poster {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle drop shadow */
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a text shadow */
+    letter-spacing: 2px; /* Wider letter spacing */
+    color: #5D3FD3;
+    text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-top: 40px;
+    text-decoration: underline; /* Underline the subtitle */
+    color: #FF69B4; /* Yellow color for the subtitle */
+    text-shadow: 0 0 10px #800080, 0 0 20px #800080, 0 0 30px #800080;
+}
+
+.events {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    img { opacity: 0.5; }
+}
+
+li {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #33ccff; /* Blue color for list items */
+    text-shadow: 0 0 10px #000000, 0 0 20px #000000;
+}
+
+.countdown {
+    font-size: 24px;
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    color: #ffcc33; /* Yellow color for the countdown text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a text shadow */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the countdown */
+    animation: blink 1s infinite;
+}
+
+.live-link {
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #008B8B; /* Yellow color for the link */
+    text-decoration: underline; /* Underline the link */
+    text-shadow: 0 0 10px #9F2B68, 0 0 20px #9F2B68, 0 0 30px #9F2B68; /* Neon glow effect */
+}
+
+.live-link:hover {
+    color: #ffffff; /* Change link color on hover */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; /* Change neon glow effect on hover */
+}
+
+
+h1, h2 {
+    font-family: "Impact", sans-serif; /* Use Impact font for titles */
+}
+
+/* Blinking effect for the countdown */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
