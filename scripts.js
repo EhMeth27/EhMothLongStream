@@ -5,7 +5,7 @@ function getTimeRemaining(targetDate) {
 }
 
 function updateCountdown() {
-    const targetDate = new Date('2025-08-01T09:00:00-05:00').getTime();
+    const targetDate = new Date('2026-08-07T09:00:00-05:00').getTime();
     const timeRemaining = getTimeRemaining(targetDate);
     const seconds = Math.floor(timeRemaining / 1000);
     const minutes = Math.floor(seconds / 60);
